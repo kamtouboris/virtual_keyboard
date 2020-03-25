@@ -263,6 +263,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
 
     return Expanded(
       child: InkWell(
+         customBorder: CircleBorder(),
         onTap: () {
           if (key.action == VirtualKeyboardKeyAction.Shift) {
             if (!alwaysCaps) {
