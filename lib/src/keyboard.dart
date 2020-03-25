@@ -194,6 +194,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
   Widget _keyboardDefaultKey(VirtualKeyboardKey key) {
     return Expanded(
         child: InkWell(
+          customBorder: CircleBorder(),
       onTap: () {
         onKeyPress(key);
       },
